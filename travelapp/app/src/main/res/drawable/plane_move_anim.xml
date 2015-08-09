@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- oneshot决定了是否只播放一次 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/plane_move9" android:duration="0"></item>
+    <item android:drawable="@drawable/plane_move1" android:duration="300"></item>
+    <item android:drawable="@drawable/plane_move2" android:duration="300"></item>
+    <item android:drawable="@drawable/plane_move3" android:duration="300"></item>
+    <item android:drawable="@drawable/plane_move4" android:duration="300"></item>
+    <item android:drawable="@drawable/plane_move5" android:duration="300"></item>
+    <item android:drawable="@drawable/plane_move6" android:duration="300"></item>
+    <item android:drawable="@drawable/plane_move7" android:duration="300"></item>
+    <item android:drawable="@drawable/plane_move8" android:duration="300"></item>
+    <item android:drawable="@drawable/plane_move9" android:duration="300"></item>
+   
+</animation-list>

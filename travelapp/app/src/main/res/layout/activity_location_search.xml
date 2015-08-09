@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    <RelativeLayout 
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logging_btn_height"
+    	android:background="@drawable/logging_background">
+        <ImageView 
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/hello_world"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+        <LinearLayout 
+            android:id="@+id/location_search_location_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/location_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/location"
+	            android:contentDescription="@string/hello_world"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginTop="8dp"
+	            android:layout_marginBottom="8dp"/>
+            <TextView 
+                android:id="@+id/location_search_location_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:text="广州"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+    	android:id="@+id/layout"
+    	android:layout_below="@id/title_bar">
+        <com.scnu.yxp.travelapp.view.MyListView 
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:cacheColorHint="#00000000"
+            android:dividerHeight="10dp"
+            android:divider="#fff"
+            android:paddingLeft="@dimen/gap"
+            android:paddingRight="@dimen/gap"
+            android:fastScrollEnabled="true"
+            android:scrollbars="@null" />
+        <ImageButton
+		    android:id="@+id/up_btn_locationActivity"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/back_to_up_btn"
+		    android:contentDescription="@string/hello_world"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/location_search_food_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/location_search_btn_margin_top" >
+
+        <ImageButton
+            android:id="@+id/location_search_food_btn"
+            android:layout_width="@dimen/search_landscape_btn_width"
+            android:layout_height="@dimen/search_landscape_btn_height"
+            android:background="@drawable/food_btn_bg"
+            android:contentDescription="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/location_search_food_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美食"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/location_search_landscape_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/location_search_btn_margin_top"
+        android:layout_toLeftOf="@id/location_search_food_layout"
+        android:layout_marginRight="40dp" >
+
+        <ImageButton
+            android:id="@+id/location_search_landscape_btn"
+            android:layout_width="@dimen/search_landscape_btn_width"
+            android:layout_height="@dimen/search_landscape_btn_height"
+            android:background="@drawable/landscape_btn_bg"
+            android:contentDescription="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/location_search_landscape_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="风景"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/location_search_life_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/location_search_btn_margin_top"
+        android:layout_toRightOf="@id/location_search_food_layout"
+        android:layout_marginLeft="40dp" >
+
+        <ImageButton
+            android:id="@+id/location_search_life_btn"
+            android:layout_width="@dimen/search_landscape_btn_width"
+            android:layout_height="@dimen/search_landscape_btn_height"
+            android:background="@drawable/life_btn_bg"
+            android:contentDescription="@string/hello_world"/>
+
+        <TextView
+            android:id="@+id/location_search_life_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

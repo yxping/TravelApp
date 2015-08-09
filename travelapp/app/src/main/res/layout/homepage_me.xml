@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/me_background"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/hello_world"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:gravity="center" >
+
+                <com.scnu.yxp.travelapp.view.PhotoImageView
+                    android:id="@+id/me_photoImageView"
+		            android:layout_width="60dp"
+		            android:layout_height="60dp"
+		            android:src="@drawable/daxiong"
+		             />
+                <TextView 
+                    android:id="@+id/homepage_me_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大雄"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                <Button 
+                    android:id="@+id/myDairyBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/me_blankframe"
+                    android:text="@string/me_mydairy_label"
+                    android:textColor="@color/sky_blue"
+                    />
+                <Button
+                    android:id="@+id/myCollectionBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/me_mycollection_label"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+        	android:id="@+id/homepage_me_fragmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+	<RelativeLayout 
+	    android:id="@+id/me_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_title_height">
+        
+        <ImageView
+            android:id="@+id/me_setting_btn"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_setting_btn"
+            android:contentDescription="@string/hello_world"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+    
+	
+    
+</RelativeLayout>
+

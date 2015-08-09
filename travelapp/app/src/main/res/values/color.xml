@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 天蓝色 -->
+    <color name="sky_blue">#33ccff</color>
+    <color name="sea_blue">#0099ff</color>
+    <color name="red">#ff0033</color>
+    <color name="gray_black">#222222</color>
+    <color name="white">#fff</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#50000000</color>
+</resources>

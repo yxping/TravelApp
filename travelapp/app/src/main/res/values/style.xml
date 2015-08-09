@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+		<attr name="roundWidth" format="dimension" />
+		<attr name="roundHeight" format="dimension" />
+	</declare-styleable>
+	<style name="Anim1" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/me_setting_page_in</item>
+        <item name="android:windowExitAnimation">@anim/me_setting_page_out</item>
+	</style>
+	<style name="Anim2" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/me_dairy_gallery_share_in</item>
+        <item name="android:windowExitAnimation">@anim/me_dairy_gallery_share_out</item>
+	</style>
+	<style name="MySettingPageStyle"  >
+	    <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowAnimationStyle">@style/Anim1</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">false</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->        
+     </style>
+     <style name="MyDairyGalleryShareStyle"  >
+	    <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowAnimationStyle">@style/Anim2</item>
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">false</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->        
+     </style>
+     <style name="LabelSelectStyle"  >
+	    <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">false</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->        
+     </style>
+     <style name="ImagePickerPopupWindowStyle">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    <style name="MySettingNickNameStyle"  parent="@android:style/Theme.Dialog">
+	    <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊--> 
+     </style>
+</resources>

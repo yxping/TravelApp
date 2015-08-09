@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    <RelativeLayout 
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_title_height"
+		android:background="@drawable/logging_background">
+        
+        <ImageView
+            android:id="@+id/me_dairy_gallery_detail_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:contentDescription="@string/hello_world"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day1"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true">
+            
+        </TextView>
+        <Button
+            android:id="@+id/me_dairy_gallery_share_btn"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:background="@drawable/me_share_btn"
+            android:contentDescription="@string/hello_world"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"/>
+        
+        <Button
+            android:id="@+id/me_dairy_gallery_love_btn"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:background="@drawable/me_love_btn_white"
+            android:contentDescription="@string/hello_world"
+            android:layout_toLeftOf="@id/me_dairy_gallery_share_btn"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"/>
+    </RelativeLayout>
+    <GridView 
+        android:id="@+id/me_dairy_gallery_detail_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:listSelector="@color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="3dp"
+        android:clipChildren="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"></GridView>
+    <TextView 
+        android:id="@+id/me_dairy_gallery_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="美美的美美的美美的美美的美美的美美的美美的美美的美美的美美的美美的美美的"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="#000"/>
+
+</LinearLayout>

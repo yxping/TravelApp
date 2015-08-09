@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="src/com/scnu/yxp/travelapp/homepage/HomePageActivity.java" />
+    </issue>
+</lint>

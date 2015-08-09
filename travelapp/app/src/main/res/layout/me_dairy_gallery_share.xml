@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/me_dairy_gallery_share_layout"
+    android:gravity="center" >
+    <LinearLayout
+	    android:layout_width="200dp"
+	    android:layout_height="120dp"
+	    android:orientation="horizontal"
+	    android:background="@drawable/me_dairy_gallery_share_frame"
+	    android:gravity="center" >
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:layout_marginRight="20dp">
+	        <Button 
+		        android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:background="@drawable/me_dairy_gallery_share_sendbtn"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/red"
+	            android:text="@string/me_dairy_gallery_share_sendbtn"/>
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center">
+	        <Button 
+		        android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:background="@drawable/me_dairy_gallery_share_sharebtn"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/red"
+	            android:text="@string/me_dairy_gallery_share_sharebtn"/>
+	    </LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

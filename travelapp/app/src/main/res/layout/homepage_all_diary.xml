@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_title_height"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hello_world"
+            android:src="@drawable/location"
+            android:layout_marginLeft="8dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"></ImageView>
+        <EditText 
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/white_edittext_bg"
+            android:hint="@string/searchfor"
+            android:textSize="12sp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="5dp"/>
+        <ImageButton 
+            android:id="@+id/search_btn"
+            android:layout_width="@dimen/search_btn_bg_height"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/hello_world"
+            android:background="@drawable/search_btn_bg"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+	    android:background="#fff">
+        <com.scnu.yxp.travelapp.view.MyScrollView
+            android:id="@+id/homepage_all_scrollView"
+		    android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+		    android:background="#fff"
+		    android:focusable="true"  
+            android:focusableInTouchMode="true"
+            android:stackFromBottom="true"
+			android:transcriptMode="alwaysScroll"  >
+		
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+				<include 
+				    android:id="@+id/homepage_all_dairy_scrollview_header"
+				    android:layout_width="match_parent"
+				    android:layout_height="1dp"
+				    layout="@layout/mlistview_header"/>
+		        <LinearLayout
+		            android:id="@+id/homepage_btn_window"
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/homepage_btn_window_height"
+		            android:layout_marginRight="@dimen/gap"
+		            android:layout_marginLeft="@dimen/gap"
+		            android:layout_marginTop="5dp"
+		            android:background="@drawable/homepage_btn_window"
+		            android:orientation="vertical"
+		            android:gravity="center" >
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/homepage_btn_window_string"
+		                android:textColor="@color/sky_blue"
+		                android:layout_marginTop="10dp"
+		                android:layout_marginLeft="10dp"
+	                    android:textSize="12sp"/>
+		            <LinearLayout 
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:orientation="horizontal"
+		                android:layout_marginTop="15dp"
+		                android:layout_marginBottom="15dp"
+		                android:baselineAligned="false">
+		                <LinearLayout 
+		                    android:layout_weight="1"
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical"
+			                android:gravity="center">
+			                <ImageButton
+			                    android:id="@+id/all_diary_landscapte_btn"
+				                android:layout_width="@dimen/landscape_btn_width"
+				                android:layout_height="@dimen/landscape_btn_height"
+				                android:contentDescription="@string/hello_world"
+				                android:background="@drawable/landscape_btn_bg" 
+			                    />
+			                <TextView 
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/item1"
+			                    android:textColor="#000"
+			                    android:textSize="12sp"
+			                    android:textStyle="bold"/>
+		                </LinearLayout>
+		                <LinearLayout 
+		                    android:layout_weight="1"
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical"
+			                android:gravity="center">
+			                <ImageButton
+			                    android:id="@+id/all_diary_food_btn"
+				                android:layout_width="@dimen/landscape_btn_width"
+				                android:layout_height="@dimen/landscape_btn_height"
+				                android:contentDescription="@string/hello_world"
+				                android:background="@drawable/food_btn_bg" 
+			                    />
+			                <TextView 
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/item2"
+			                    android:textColor="#000"
+			                    android:textSize="12sp"
+			                    android:textStyle="bold"/>
+		                </LinearLayout>
+		                <LinearLayout
+		                    android:layout_weight="1"
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical"
+			                android:gravity="center">
+			                <ImageButton
+			                    android:id="@+id/all_diary_life_btn"
+				                android:layout_width="@dimen/landscape_btn_width"
+				                android:layout_height="@dimen/landscape_btn_height"
+				                android:contentDescription="@string/hello_world"
+				                android:background="@drawable/life_btn_bg" 
+			                    />
+			                <TextView 
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/item3"
+			                    android:textColor="#000"
+			                    android:textSize="12sp"
+			                    android:textStyle="bold" />
+		                </LinearLayout>
+		            </LinearLayout>
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:orientation="horizontal"
+		            android:layout_marginTop="10dp" >
+		            <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="25dp"
+		                android:layout_marginLeft="@dimen/gap"
+		                android:contentDescription="@string/hello_world"
+		                android:background="@drawable/title_vertical_btn_small"
+		                android:scaleType="fitCenter" >
+		            </ImageView>
+		
+		            <TextView
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="8dp"
+		                android:layout_weight="1"
+		                android:text="@string/newdiary"
+		                android:textColor="#000"
+		                android:textSize="12sp" />
+				<!-- <ImageView
+		                android:layout_width="17dp"
+		                android:layout_height="25dp"
+		                android:background="@drawable/left_arrow"
+		                android:contentDescription="@string/hello_world"
+		                android:scaleType="center"
+		                android:layout_marginRight="@dimen/gap"/> -->
+		            
+		        </LinearLayout>
+		
+		        <ListView
+		            android:id="@+id/homepage_all_diary_listView"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:cacheColorHint="#00000000"
+		            android:dividerHeight="10dp"
+		            android:divider="#fff"
+		    		android:layout_marginTop="10dp"
+		    		android:paddingLeft="@dimen/gap"
+		    		android:paddingRight="@dimen/gap" >
+		        </ListView>
+		        
+		        <include 
+				    android:id="@+id/homepage_all_dairy_scrollview_footer"
+		            layout="@layout/mlistview_footer"></include>"
+		    </LinearLayout>
+		
+		</com.scnu.yxp.travelapp.view.MyScrollView>
+		<ImageButton
+		    android:id="@+id/up_btn"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:background="@drawable/back_to_up_btn"
+		    android:contentDescription="@string/hello_world"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="@dimen/gap"
+		    android:layout_marginBottom="@dimen/gap"/>
+    </RelativeLayout>
+	
+    
+</LinearLayout>
+    

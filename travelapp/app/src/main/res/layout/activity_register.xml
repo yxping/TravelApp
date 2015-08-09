@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logging_background"
+    android:gravity="center_horizontal" >
+    <LinearLayout 
+        android:layout_width="@dimen/logging_btn_width"
+	    android:layout_height="200dp"
+	    android:orientation="vertical"
+	    android:background="@drawable/register_write_window"
+	    android:layout_marginTop="10dp"
+	    android:padding="10dp">
+	    <com.scnu.yxp.travelapp.view.EmailAutoCompleteTextView 
+	        android:id="@+id/mail"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/mail"
+	        android:background="@drawable/gray_edittext_bg"
+	        android:textColor="#000"
+	        ></com.scnu.yxp.travelapp.view.EmailAutoCompleteTextView>
+	    <EditText
+	        android:id="@+id/neckname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/neckname"
+	        android:background="@drawable/gray_edittext_bg"
+	        android:layout_marginTop="5dp"
+	        android:textColor="#000"
+	        android:maxLength="10"
+	        ></EditText>
+	    <EditText
+	        android:id="@+id/password"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/password"
+	        android:background="@drawable/gray_edittext_bg"
+	        android:inputType="textPassword"
+	        android:layout_marginTop="5dp"
+	        android:textColor="#000"
+	        android:maxLength="10"
+	        ></EditText>
+	    <EditText
+	        android:id="@+id/repassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/repassword"
+	        android:background="@drawable/gray_edittext_bg"
+	        android:inputType="textPassword"
+	        android:layout_marginTop="5dp"
+	        android:maxLength="10"
+	        android:textColor="#000"
+	        ></EditText>
+    </LinearLayout>
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="@dimen/logging_btn_width"
+        android:layout_height="@dimen/logging_btn_height"
+        android:contentDescription="@string/hello_world"
+        android:background="@drawable/activity_logging_btn_bg_bg"
+        android:layout_marginTop="20dp"
+		android:text="@string/register"
+		android:textSize="18sp"
+		android:textColor="@color/sea_blue"
+        android:textStyle="bold"></Button>
+    <!-- <ImageButton
+        android:id="@+id/register_btn"
+        android:layout_width="@dimen/logging_btn_width"
+        android:layout_height="@dimen/logging_btn_height"
+        android:contentDescription="@string/hello_world"
+        android:background="@drawable/register_btn_bg"
+        android:layout_marginTop="20dp"></ImageButton> -->
+    
+
+</LinearLayout>

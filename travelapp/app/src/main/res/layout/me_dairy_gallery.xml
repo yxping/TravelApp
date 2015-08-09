@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+    
+    <LinearLayout 
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/me_dairy_gallery_middle_part_height" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/me_background"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/hello_world"/>
+
+            <RelativeLayout
+                android:id="@+id/me_dairy_gallery_photolayout"
+                android:layout_width="@dimen/me_dairy_gallery_head_image"
+                android:layout_height="@dimen/me_dairy_gallery_head_image"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true" >
+
+                <com.scnu.yxp.travelapp.view.PhotoImageView
+                    android:id="@+id/me_dairy_gallery_photo"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:src="@drawable/daxiong"
+		            android:scaleType="centerCrop"></com.scnu.yxp.travelapp.view.PhotoImageView>
+            </RelativeLayout>
+            <TextView 
+                android:id="@+id/me_dairy_gallery_title"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/me_dairy_gallery_title"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_toRightOf="@id/me_dairy_gallery_photolayout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:ellipsize="end"/>
+            <ImageView
+                android:id="@+id/me_dairy_gallery_revise_title"
+                android:layout_toRightOf="@id/me_dairy_gallery_title"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/me_dairy_gallery_pencil"
+                android:contentDescription="@string/hello_world"/>
+            
+        </RelativeLayout>
+        <com.scnu.yxp.travelapp.view.MyListView 
+	        android:id="@+id/me_dairy_gallery_listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:cacheColorHint="#00000000"
+            android:dividerHeight="10dp"
+            android:divider="#fff"
+            android:paddingLeft="@dimen/gap"
+            android:paddingRight="@dimen/gap"
+            android:fastScrollEnabled="true"
+            android:scrollbars="@null" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/me_dairy_gallery_newBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/me_dairy_gallery_new_btn"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:contentDescription="@string/hello_world"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"/>
+    <LinearLayout 
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:background="#fff"
+        android:paddingLeft="@dimen/gap">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/me_dairy_gallery_plane"
+            android:contentDescription="@string/hello_world"></ImageView>
+    </LinearLayout>
+	<RelativeLayout 
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_title_height"
+		android:background="#00000000">
+        
+        <ImageView
+            android:id="@+id/me_dairy_gallery_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn"
+            android:contentDescription="@string/hello_world"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/me_dairy_gallery_share_btn"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:background="@drawable/me_share_btn"
+            android:contentDescription="@string/hello_world"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"/>
+    </RelativeLayout>
+</RelativeLayout>

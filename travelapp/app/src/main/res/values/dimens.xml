@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="gap">13dp</dimen>
+	<dimen name="logging_write_window">120dp</dimen>
+	<dimen name="logging_btn_height">40dp</dimen>
+	<dimen name="logging_btn_width">270dp</dimen>
+	<dimen name="choose_logging_btn_height">40dp</dimen>
+	<dimen name="choose_logging_btn_width">200dp</dimen>
+	<dimen name="homepage_title_height">40dp</dimen>
+	<dimen name="homepage_btn_window_height">150dp</dimen>
+	<dimen name="homepage_btn_bottom_height">50dp</dimen>
+	<dimen name="search_btn_bg_height">45dp</dimen>
+	<dimen name="landscape_btn_width">70dp</dimen>
+	<dimen name="landscape_btn_height">70dp</dimen>
+	<dimen name="homepage_btn_up_height">35dp</dimen>
+	<dimen name="location_search_up_btn_width">70dp</dimen>
+	<dimen name="location_search_btn_margin_top">45dp</dimen>
+	<dimen name="hobby_search_up_btn_width">50dp</dimen>
+	<dimen name="homepage_me_dairy_listview_item_calendar">40dp</dimen>
+	<dimen name="homepage_me_dairy_listview_item_frame_height">120dp</dimen>
+	<dimen name="homepage_image_item_frame_height">120dp</dimen>
+	<dimen name="search_landscape_btn_width">50dp</dimen>
+	<dimen name="search_landscape_btn_height">50dp</dimen>
+	<dimen name="search_landscape_btn_width_small">30dp</dimen>
+	<dimen name="search_landscape_btn_height_small">30dp</dimen>
+	<dimen name="mylistview_header_margintop">70dp</dimen>
+	<dimen name="me_dairy_gallery_middle_part_height">120dp</dimen>
+	<dimen name="me_dairy_gallery_head_image">50dp</dimen>
+	<dimen name="me_dairy_gallery_listview_item_left_part_width">70dp</dimen>
+	<dimen name="me_dairy_gallery_listview_item_height">130dp</dimen>
+	
+</resources>
